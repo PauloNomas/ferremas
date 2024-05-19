@@ -1,0 +1,85 @@
+{% extends "core/base.html" %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    {% block principal %}
+  <title>Registro de usuario</title>
+  <link rel="stylesheet" href="{% static 'core//css/registro.css' %}">
+
+</head>
+<body>
+  
+
+  <main>
+  <div class="container mt-5">
+    <h1>Registro</h1>
+
+    <form>
+      <div class="row">
+        <div class="col-md-5">
+          
+          <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre ">
+
+          <label for="apellido" class="form-label pt-1"></label>
+          <input type="text" class="form-control" id="apellido" placeholder="Introduce tu  apellido">
+
+          <label for="rut" class="form-label pt-1"></label>
+          <input type="rut" class="form-control" id="rut" placeholder="Introduce tu rut">
+
+          <label for="email" class="form-label pt-1"></label>
+          <input type="email" class="form-control" id="email" placeholder="Introduce tu correo">
+
+          <label for="tel" class="form-label pt-1"></label>
+          <input type="number" class="form-control" id="tel" placeholder="Introduce tu telefono">
+        </div>
+      </div>
+          
+      <div class="container text-center">
+        <div class="row">
+          <div class="col order-last">
+            <button type="button" class="btn btn-dark w-100">Registrate</button>
+          </div>
+          <div class="col">
+            
+          </div>
+          
+        </div>
+      </div>
+          
+        <div class="row">
+           <div class="col-md-5">
+           <label for="contrasena" class="form-label pt-1"></label>
+           <input type="password" class="form-control" id="contrasena" placeholder="Introduce tu contraseña">
+
+           <label for="repetirContrasena" class="form-label pt-1"></label>
+           <input type="password" class="form-control" id="repetirContrasena" placeholder="Repite tu contraseña">
+           
+           <div class="container text-center mt-3">
+            <div class="row align-items-end">
+              <div class="col">
+                <li>Min.8 caracteres</li>
+                <li>Ningun espacio</li>
+              </div>
+              <div class="col">
+                <li>1 numero</li>
+                <li>1 minuscula</li>
+              </div>
+              <div class="col">
+                <li>1 mayúscula</li>
+                
+              </div>
+            </div>
+          </div>
+
+
+
+
+           </div>
+        </div>
+        
+      </main>
+
+{% endblock principal  %}

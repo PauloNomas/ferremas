@@ -1,0 +1,54 @@
+{% extends "core/base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      {% load static %}
+      {% block principal %} 
+    <link rel="stylesheet" href="{% static 'core/css/producto.css' %}">
+  
+    <title>producto</title>
+</head>
+
+
+
+<body>
+    <main>
+        
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Martillo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Martillo</h1>
+  </header>
+
+  <main>
+    <section class="producto">
+      <div class="imagen">
+        <div class="informacion col-lg-8">
+            <h2>$10.990</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fugio at orci pretium scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fugio at orci pretium scelerisque.</p>
+        
+            <form action="#">
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" value="1">
+      
+                <button type="submit">Agregar al carro</button>
+            
+        <img src="{% static 'core/img/martillo.jpg' %}" alt="Martillo">
+      </div>
+
+      
+        
+        </form>
+      </div>
+    </section>
+    
+  </main>
+  {% endblock principal %}
+
+  

@@ -1,0 +1,32 @@
+/* css galeria de productos*/
+#galeria{
+    
+    text-align: auto;
+    margin-top: 60px;
+    color: rgb(0, 0, 0);
+    margin-right: 10px;
+    
+}
+div.galeria{
+    margin: 10px 20px;
+    float: left;
+    width: 350px;
+
+}
+#foto{
+    border: 5px solid #ccc;
+    float: left;
+    margin: 15px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+}
+ 
+#foto:hover {
+    margin-top: 2px;
+}
+
+#uwu{
+    margin-top: auto;
+}
+

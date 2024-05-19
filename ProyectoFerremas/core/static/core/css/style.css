@@ -1,0 +1,22 @@
+contenedor-barra-busqueda {
+    display: flex;
+    align-items: center;
+    width: 300px; /* Ajusta el ancho según tus preferencias */
+    margin: 20px auto;
+  }
+  
+  #barra-busqueda {
+    flex: 1; /* Permite que el input ocupe todo el ancho disponible */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #boton-buscar {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

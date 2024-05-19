@@ -1,0 +1,118 @@
+{% extends "core/base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   {% load static %}
+   
+{% block principal %}
+
+
+  <link rel="stylesheet" href="{% static 'core/css/carrusel_edit.css' %}">
+  <link rel="stylesheet" href="{% static 'core/css/banner.css' %}">
+
+  <title>index</title>
+</head>
+<body>
+
+  
+  <!--banner-->
+  <main>
+    <section id="banner">
+      <img src="{% static 'core/img/que-vender-en-una-ferreteria.png' %}"  alt="">
+      <div class="contenedor">
+          <h1>Bienvenidos</h1>
+          <h2>Tenemos las Herramientas que necesitas </h2>
+          <a href="contactanos.html">Contactanos</a>    
+      </div>
+  </section>
+<!--carrusel-->
+<section id="carrusel_edit">
+  <div class="carrusel_edit">
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+       <a href="tienda.html"> <img src="{% static 'core/img/ferreteria-basica.jpg' %}" class="d-block w-100" alt="..." height="450px"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="galeria2.html"> <img src="{% static 'core/img/funciones-del-jefe-de-compras-6.png' %}" class="d-block w-100" alt="..." height="450px"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="galeria3.html"> <img src="{% static 'core/img/herramientas.jpg' %}" class="d-block w-100" alt="..." height="450px"></a>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+</div>
+
+<!--marcas-->
+<div class="ful-img" id="fulImgBox">
+  <img src="{% static 'core/imgs/images.jpg' %}" id="fulImg" alt="">
+  <span onclick="closeImg()">X</span>
+</div>
+
+<h1><span>Marcas que trabajan con nosotros</span></h1>
+
+<div class="img-gallery">
+  <article>
+  <a href="tienda.html"></a><img src="{% static 'core/img/images.jpg' %}"   alt="">
+  
+</article>
+
+<article>
+  <a href="tienda.html"></a><img src="{% static 'core/img/Logo-Bosch.png' %}"   alt="">
+  
+</article>
+
+<article>
+  <a href="tienda.html"></a><img src="{% static 'core/img/stanley.png' %}"   alt="">
+  
+</article>
+
+<article>
+  <a href="tienda.html"></a><img src="{% static 'core/img/sika.png' %}"   alt="">
+  
+</article>
+ 
+</div>
+
+<section class="pt-6">
+
+  <div class="container">
+    <div class="py-8 px-5 position-relative text-center" style="background-color: rgba(223, 215, 249, 0.199);border-radius: 129px 20px 20px 20px;">
+      <div class="position-absolute start-100 top-0 translate-middle ms-md-n3 ms-n4 mt-3"> <img src="{% static 'core/img/send.png' %}" style="max-width:70px;" alt="send icon" /></div>
+
+      <div class="position-absolute start-0 bottom-0 ms-3 z-index--1 d-none d-sm-block"> <img src="{% static 'core/img/shape-bg1.png' %}" style="max-width: 340px;" alt="cta shape" /></div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+          <h2 class="text-secondary lh-1-7 mb-7">Subscribete para recibir notificaciones sobre productos nuevos y en descuento</h2>
+          <form class="row g-3 align-items-center w-lg-75 mx-auto">
+            <div class="col-sm">
+              <div class="input-group-icon">
+                <input class="form-control form-little-squirrel-control " type="email" placeholder=" email " aria-label="email" /><img class="input-box-icon" src="{% static 'core/img/mail.svg' %}" width="17" alt="mail" />
+              </div>
+            </div>
+            <div class="col-sm-auto">
+              <button class="btn btn-danger orange-gradient-btn fs--1">Subscribirme</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+  </main>
+  {% endblock principal %}

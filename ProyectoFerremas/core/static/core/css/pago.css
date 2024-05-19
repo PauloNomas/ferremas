@@ -1,0 +1,62 @@
+body {
+    font-family: sans-serif;
+}
+
+
+h1 {
+    margin-top: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.producto {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.boton-pago {
+    text-align: center;
+    margin-left: 25px;
+    margin-top: -50px;
+    
+}
+
+
+button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.metodos-envio {
+    margin-top: 20px;
+}
+
+.metodo-envio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
