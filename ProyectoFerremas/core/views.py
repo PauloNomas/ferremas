@@ -19,3 +19,10 @@ def tienda (request):
 def carrito (request):
     return render(request,'core/Carrito.html')
 
+def metodosPago(request):
+    return render(request,'core/metodos_pago.html')
+
+def transferencia(request):
+    return render(request,'core/transferencia.html')
+
+

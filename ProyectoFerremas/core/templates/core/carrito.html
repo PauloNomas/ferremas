@@ -1,13 +1,15 @@
 {% extends "core/base.html" %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     {% load static %}
    
     {% block principal %}
+    <link rel="stylesheet" href="{% static 'core/css/carrito.css' %}">
     <title>Carrito</title>
 </head>
 <body>
@@ -28,7 +30,13 @@
               <span>$19990</span>
             </div>
           </div>
-      
+      <section id="boton">
+      <div class="mt-5 flex justify-center">
+        
+        <a class="btn btn-danger" href="{% url 'metodosPago' %}" role="button"style="color: black;">Pagar</a>
+        
+          </div>
+        </section>
           <div class="flex justify-between border-t pt-2 mt-2">
             <span class="font-bold">TOTAL</span>
             <span class="font-bold">$59.970</span>
@@ -50,9 +58,7 @@
             </div>
           </div>
       
-          <div class="mt-5 flex justify-center">
-            <button class="btn btn-danger">PAGAR</button>
-          </div>
+         
         </div>
       </div>
 </body>

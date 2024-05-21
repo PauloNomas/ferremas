@@ -1,0 +1,52 @@
+{% extends "core/base.html" %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% load static %}
+   
+    {% block principal %}
+    <link rel="stylesheet" href="{% static 'core/css/carrito.css' %}">
+    <title>metodos de pago</title>
+    <body>
+        <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <
+  </head>
+  <body>
+    <div class="container mt-5">
+  <div class="row">
+    <div class="col-12 text-center mb-4">
+      <h1>Metodos de Pago</h1>
+    </div>
+    
+    <div class="col-md-6">
+      <div class="d-flex align-items-center mb-3">
+        <a href="{% url 'transferencia' %}"> <img src="{% static 'core/img/transferenciabancaria.png' %}"  class="me-3"></a>
+      </div>
+      <h4>Recuerda que por este metodo se necesita una confirmación mandando una captura de pantalla del comprobante de pago</h4>
+      <h4>Podría demorar en la confirmación del pedido</h4>
+      
+      <h2>Datos Transferencia</h2>
+      <p>Pepito Peres</p>
+      <p>Correo: pepito_peres19@gmail.com</p>
+      <p>RUN: 12345678-9</p>
+      <p>Telefono: +56912345678</p>
+      <p>Banco Estado</p>
+      <div class="d-flex align-items-center">
+        <img src="{% static 'core/img/whatsapp.svg' %}" alt="WhatsApp" class="me-2">
+        <p class="mb-0">Recordar enviar comprobante al whatsapp</p>
+      </div>
+    </div>
+    <div class="col-md-6 text-center mt-4">
+        <a href="tienda.html"> <img src="{% static 'core/img/webpay.png' %}" >
+    </div>
+  </div>
+</div>
+  </body>
+
+    {% endblock principal %}

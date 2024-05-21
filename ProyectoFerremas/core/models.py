@@ -28,23 +28,27 @@ class TipoEmpleado(models.Model):
 
 
     
-
-    
-
-
-    
-
-
 class Producto(models.Model):
-    Nombre = models.CharField(max_length=50)
-    tipo = models.ForeignKey(TipoHerramienta, on_delete=models.CASCADE)
-    descripcion = models.TextField()  
-    marca = models.ForeignKey(Marca, on_delete=models.CASCADE)
-    imagen = models.ImageField(upload_to="noticias", null=True)
-    precio = models.IntegerField
+    nombre = models.CharField(max_length=64)
+    
+    precio = models.IntegerField()
 
     def __str__(self):
-        return self.Nombre
+        return self.nombre
+
+    
+
+
+#class Producto(models.Model):
+#    Nombre = models.CharField(max_length=50)
+#    tipo = models.ForeignKey(TipoHerramienta, on_delete=models.CASCADE)
+#    descripcion = models.TextField()  
+#    marca = models.ForeignKey(Marca, on_delete=models.CASCADE)
+#    imagen = models.ImageField(upload_to="noticias", null=True)
+#    precio = models.IntegerField
+
+#    def __str__(self):
+#        return self.Nombre
 
 
 class Empleado(models.Model):
